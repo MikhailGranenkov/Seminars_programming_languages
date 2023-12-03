@@ -57,7 +57,7 @@
 // }
 
 
-// int evenNumbers(int[] array)
+// int GetEvenNumbers(int[] array)
 // {
 //     int count = 0;
 //     foreach (int el in array)
@@ -73,7 +73,7 @@
 // int[] array = new int[10];
 // InputArray(array);
 // Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
-// Console.WriteLine($"Результат: {evenNumbers(array)}");
+// Console.WriteLine($"Результат: {GetEvenNumbers(array)}");
 
 
 // Задача 3: Задайте массив из вещественных чисел с ненулевой дробной частью. 
