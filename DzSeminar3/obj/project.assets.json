@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mikhailgranenkov/Desktop/Обучение/Семинары/Знакомство с языками программирования/Seminars/DzSeminar3/DzSeminar3.csproj",
+      "projectUniqueName": "/Users/mikhailgranenkov/Desktop/Обучение/Семинары/Знакомство с языками программирования/Seminars_programming_languages/DzSeminar3/DzSeminar3.csproj",
       "projectName": "DzSeminar3",
-      "projectPath": "/Users/mikhailgranenkov/Desktop/Обучение/Семинары/Знакомство с языками программирования/Seminars/DzSeminar3/DzSeminar3.csproj",
+      "projectPath": "/Users/mikhailgranenkov/Desktop/Обучение/Семинары/Знакомство с языками программирования/Seminars_programming_languages/DzSeminar3/DzSeminar3.csproj",
       "packagesPath": "/Users/mikhailgranenkov/.nuget/packages/",
-      "outputPath": "/Users/mikhailgranenkov/Desktop/Обучение/Семинары/Знакомство с языками программирования/Seminars/DzSeminar3/obj/",
+      "outputPath": "/Users/mikhailgranenkov/Desktop/Обучение/Семинары/Знакомство с языками программирования/Seminars_programming_languages/DzSeminar3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mikhailgranenkov/.nuget/NuGet/NuGet.Config"

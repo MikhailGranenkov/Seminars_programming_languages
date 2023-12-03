@@ -78,15 +78,15 @@ a = 891 => 81
 
 
 // Задание 4
-Console.Clear();
-Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine()!);
-number = Math.Abs(number); // модуль числа |-5| = 5
-if (number < 100)
-    Console.WriteLine("Третьей цифры нет");
-else{
-    Console.WriteLine(number % 1000 / 100);
-}
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int number = int.Parse(Console.ReadLine()!);
+// number = Math.Abs(number); // модуль числа |-5| = 5
+// if (number < 100)
+//     Console.WriteLine("Третьей цифры нет");
+// else{
+//     Console.WriteLine(number % 1000 / 100);
+// }
 // 456 -> 4
 // 3129 -> 1
 // 59602 -> 6

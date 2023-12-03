@@ -1,18 +1,34 @@
-﻿//Задача 1
-// int x = Convert.ToInt32(Console.Read());
-// if (x % 7 == 0 && x % 23 == 0) Console.Writeline($"Число {X} кратно одновременно 7 и 23.");
-// else
+﻿// Задача 1
+// Напишите программу, которая принимает на вход число и проверяет,
+// кратно ли оно одновременно 7 и 23.
+
+
+// using System;
+// class Program
 // {
-//     Console.Writeline($"Число {X} НЕ кратно одновременно 7 и 23.");
+//     static void Main()
+//     {
+//         Console.Write("Введите число n: ");
+//         int n = Convert.ToInt32(Console.ReadLine());
+//         if (n % 7 == 0 && n % 23 == 0)
+//         {
+//             Console.WriteLine("да, кратно");
+//         }
+//         else
+//         {
+//             Console.WriteLine("нет, не кратно");
+//         }
+//     }
 // }
-// Пчему то постоянно говорит что Не кратно.
-
-// Рабочее решение
-//Console.WriteLine((int.Parse(Console.ReadLine()!) % 161 == 0) ? "Число кратно одновременно 7 и 23." : "Число НЕ кратно одновременно 7 и 23.");
 
 
 
-//Задача 2
+
+// Задача 2
+// Напишите программу, которая принимает на вход координаты точки (X и Y),
+// причём X ≠ 0 и Y ≠ 0 и выдаёт номер координатной четверти плоскости,
+// в которой находится эта точка.
+
 // using System;
 // class Program
 // {
@@ -20,30 +36,30 @@
 //     {
 //         Console.WriteLine("Введите координаты точки (X и Y):");
 
-//         // Ввод координат с клавиатуры
-//         Console.Write("Введите X: ");
+//         // Вводим координаты
+//         Console.Write("Введите X: ");   
 //         double x = Convert.ToDouble(Console.ReadLine());
 
 //         Console.Write("Введите Y: ");
 //         double y = Convert.ToDouble(Console.ReadLine());
 
-//         // Проверка условия X ≠ 0 и Y ≠ 0
+//         // Проверка что X ≠ 0 и Y ≠ 0
 //         if (x == 0 || y == 0)
 //         {
-//             Console.WriteLine("Ошибка: X и Y должны быть не равны нулю.");
+//             Console.WriteLine("X и Y не должны быть равны нулю.");
 //         }
 //         else
 //         {
 //             // Определение четверти
-//             int quadrant = DetermineQuadrant(x, y);
+//             int quarter = DefinitionQuarter(x, y);
 
-//             // Вывод результата
-//             Console.WriteLine($"Точка находится в {quadrant} четверти.");
+//             // Печать результата
+//             Console.WriteLine($"Точка находится в {quarter} четверти.");
 //         }
 //     }
 
-//     // Метод для определения номера координатной четверти
-//     static int DetermineQuadrant(double x, double y)
+//     // Метод определения номера координатной четверти
+//     static int DefinitionQuarter(double x, double y)
 //     {
 //         if (x > 0 && y > 0)
 //         {
@@ -66,12 +82,16 @@
 
 
 
-//Задача 3
+// Задача 3
+// Напишите программу, которая принимает на вход целое число из отрезка [10, 99]
+// и показывает наибольшую цифру числа.
+
+
 // Console.Write("Введите число от 10 до 99: ");
 // int number = int.Parse(Console.ReadLine()!);
 // while (number < 10 || number > 99)
 // {
-//     Console.Write("Вы ввели неверное число!\nВведите число от 10 до 99: ");
+//     Console.Write("Вы ввели неверное число! Введите число от 10 до 99: ");
 //     number = int.Parse(Console.ReadLine()!);
 // }
 // int firstNumber = number / 10;
@@ -86,34 +106,17 @@
 // }
 
 
+// Задача 4
+// Напишите программу, которая на вход принимает натуральное число N,
+// а на выходе показывает его цифры через запятую.
 
-//Задача 4
-// РЕШЕНИЕ 1 Не выводит запятую на последнем числе
-// Console.Write("Введите любое натуральное число: ");
-// string inputNum = (Console.ReadLine()!);
-// int number = int.Parse(inputNum);
-// string outNumLine = string.Empty;
-// int count = 0;
-// while (count < number)
+
+// Console.Write("Введите натуральное число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// string s = "";
+// while (num != 0)
 // {
-//     outNumLine = outNumLine + count + ",";
-//     count = count + 1;
+//     s = (num % 10) + "," + s;
+//     num /= 10;
 // }
-// Console.WriteLine(outNumLine + number);
-
-// РЕШЕНИЕ 2 СДЕЛАЛ С ПРИМЕРА ИЗ СЕМИНАРА 1, ТАМ СЧИАЛИ ОТ -n ДО n.
-// Console.Write("Введите любое натуральное число: ");
-// int number = int.Parse(Console.ReadLine()!);
-// for (int i = 0; i <= number; i++)
-//     Console.Write($"{i},");
-
-// РЕШЕНИЕ 3 СДЕЛАЛ С ПРИМЕРА ИЗ СЕМИНАРА 1, ТАМ СЧИАЛИ ОТ -n ДО n.
-// Console.Write("Введите любое натуральное число: ");
-// int number = int.Parse(Console.ReadLine()!);
-// int i = 0;
-// while (i <= number)
-// {
-//     Console.Write($"{i},");
-//     i++;
-// }
-// Так и не понял как сделать что бы счтило и отрицательные числа(
+// Console.WriteLine(s);
