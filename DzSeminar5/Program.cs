@@ -30,8 +30,7 @@
 //         int[,] randomNumbersArray = GenerateRandomNumbersArray(numRows, numCols);
 
 //         Console.WriteLine("Сгенерированный массив:");
-//         DisplayArray(randomNumbersArray);
-
+//         DisplayArray(randomNumbersArray);  
 //         // Получение позиции элемента от пользователя
 //         Console.Write("\nВведите номер строки: ");
 //         int row;
