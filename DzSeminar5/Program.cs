@@ -30,7 +30,8 @@
 //         int[,] randomNumbersArray = GenerateRandomNumbersArray(numRows, numCols);
 
 //         Console.WriteLine("Сгенерированный массив:");
-//         DisplayArray(randomNumbersArray);  
+//         DisplayArray(randomNumbersArray);
+//         Console.WriteLine("\t");  
 //         // Получение позиции элемента от пользователя
 //         Console.Write("\nВведите номер строки: ");
 //         int row;
@@ -149,6 +150,7 @@
 //         // Выводим изменённый массив
 //         Console.WriteLine("\nИзменённый массив:");
 //         DisplayArray(array);
+        
 //     }
 
 //     static int[,] CreateArray(int numRows, int numCols)
@@ -191,6 +193,7 @@
 //                 Console.Write(array[i, j] + " ");
 //             }
 //             Console.WriteLine();
+        
 //         }
 //     }
 // }
